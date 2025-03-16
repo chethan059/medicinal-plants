@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+/* Home Button */
+.home-btn {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-btn:active {
+  transform: translateY(1px);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 2px solid #e0e0e0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #00b09b;
+  box-shadow: 0 2px 15px rgba(0, 176, 155, 0.2);
+}
+
+.search-bar button {
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Marquee */
+.marquee-container {
+  margin: 30px 0;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.marquee {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+/* India Map Container */
+.imap {
+  width: auto;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Default State for India Map */
+.imap path {
+  fill: #e0e0e0;
+  stroke: white;
+  stroke-width: 1.5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.imap path:hover {
+  fill: #00b09b;
+  transform: scale(1.02);
+  filter: drop-shadow(0px 0px 8px rgba(0, 176, 155, 0.4));
+}
+
+/* Click Effect */
+.imap path:active {
+  transform: scale(0.98);
+  fill: #96c93d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .search-bar {
+    max-width: 300px;
+    padding: 0 15px;
+  }
+  
+  .imap {
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .marquee {
+    font-size: 18px;
+  }
+}
