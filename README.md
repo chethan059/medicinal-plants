@@ -23,7 +23,7 @@ A comprehensive web application that helps users explore and learn about medicin
 
 1. Clone the repository
 ```bash
-git clone []
+git clone [https://github.com/chethan059/medicinal-plants.git]
 ```
 
 2. Open `index.html` in your web browser to access the home page
